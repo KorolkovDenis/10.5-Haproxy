@@ -147,10 +147,32 @@ curl http://localhost:8088/ping
 
 *Приведите конфигурации настроенного Haproxy и скриншоты результата выполнения команды curl http://localhost:8080/.*
 
+Ответ:
 
+Попробовал следующий код:
 
+открываю файл:
+``` 
+nano /etc/haproxy.haproxy.cfg
+```
 
- ## Моя подробная работа в Google:
+![screen9](https://github.com/KorolkovDenis/)
+
+и такой
+
+```
+frontend localhost
+        bind *:9090
+        default_backend localhost_back
+
+backend localhost_back
+        server localhost 127.0.0.1:8088/ping
+
+```
+
+не вышло..
+
+## Моя подробная работа в Google:
 
 [Моя работа по «Балансировка нагрузки. HAProxy/Nginx»](https://docs.google.com/)
 
