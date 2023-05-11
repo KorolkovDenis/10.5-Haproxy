@@ -49,7 +49,7 @@ Weighted Round Robin
 
 systemctl status haproxy
 
-![screen1](https://github.com/KorolkovDenis/)
+![screen1](https://github.com/KorolkovDenis/10.5-Haproxy/blob/main/screenshots/screen1.jpg)
 
 
 ---
@@ -64,7 +64,7 @@ systemctl status haproxy
 
 systemctl status nginx
 
-![screen2](https://github.com/KorolkovDenis/)
+![screen2](https://github.com/KorolkovDenis/10.5-Haproxy/blob/main/screenshots/screen2.jpg)
 
 
 ---
@@ -102,13 +102,13 @@ return 200 ' nginx is configured correctly ' ;
 }
 ```
 
-![screen3](https://github.com/KorolkovDenis/)
+![screen3](https://github.com/KorolkovDenis/10.5-Haproxy/blob/main/screenshots/screen3.jpg)
 
 Далее проводим проверку:
 
 nginx -t
 
-![screen4](https://github.com/KorolkovDenis/)
+![screen4](https://github.com/KorolkovDenis/10.5-Haproxy/blob/main/screenshots/screen4.jpg)
 
 перезапускаем службу:
 
@@ -116,16 +116,16 @@ service nginx reload
 
 curl http://localhost:8088/ping
 
-![screen5](https://github.com/KorolkovDenis/)
+![screen5](https://github.com/KorolkovDenis/10.5-Haproxy/blob/main/screenshots/screen5.jpg)
 
 Через вебку:
 
-![screen6](https://github.com/KorolkovDenis/)
-![screen7](https://github.com/KorolkovDenis/)
+![screen6](https://github.com/KorolkovDenis/10.5-Haproxy/blob/main/screenshots/screen6.jpg)
+![screen7](https://github.com/KorolkovDenis/10.5-Haproxy/blob/main/screenshots/screen7.jpg)
 
 По IP постучал с другого хоста:
 
-![screen8](https://github.com/KorolkovDenis/)
+![screen8](https://github.com/KorolkovDenis/10.5-Haproxy/blob/main/screenshots/screen8.jpg)
 
 ---
 
@@ -156,7 +156,7 @@ curl http://localhost:8088/ping
 nano /etc/haproxy.haproxy.cfg
 ```
 
-![screen9](https://github.com/KorolkovDenis/)
+![screen9](https://github.com/KorolkovDenis/10.5-Haproxy/blob/main/screenshots/screen9.jpg)
 
 и такой
 
@@ -174,5 +174,5 @@ backend localhost_back
 
 ## Моя подробная работа в Google:
 
-[Моя работа по «Балансировка нагрузки. HAProxy/Nginx»](https://docs.google.com/)
+[Моя работа по «Балансировка нагрузки. HAProxy/Nginx»](https://docs.google.com/document/d/1yBlzk6lhrQJQL7ctJmrvZ9ZY4VYHmf73/edit?usp=share_link&ouid=104113173630640462528&rtpof=true&sd=true)
 
