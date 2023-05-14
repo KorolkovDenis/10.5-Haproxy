@@ -149,16 +149,14 @@ curl http://localhost:8088/ping
 
 Ответ:
 
-Попробовал следующий код:
+По заданию нужно использовать порт :8080, но у меня он уже занят, поэтому я выбрал произвольный свободный порт :9090
 
 открываю файл:
 ``` 
 nano /etc/haproxy.haproxy.cfg
 ```
 
-![screen9](https://github.com/KorolkovDenis/10.5-Haproxy/blob/main/screenshots/screen9.jpg)
-
-и такой
+добавляю запись:
 
 ```
 frontend localhost
@@ -166,13 +164,20 @@ frontend localhost
         default_backend localhost_back
 
 backend localhost_back
-        server localhost 127.0.0.1:8088/ping
-
+        server localhost 127.0.0.1:8088
 ```
 
-не вышло..
+Чтобы заработало, запись в конфигурационном файле /etc/nginx/conf.d/default.conf должна иметь такой вид:
+
+![screen10](https://github.com/KorolkovDenis/10.5-Haproxy/blob/main/screenshots/screen10.jpg)
+
+Проверяем:
+
+![screen11](https://github.com/KorolkovDenis/10.5-Haproxy/blob/main/screenshots/screen11.jpg)
+
+Все работает!
 
 ## Моя подробная работа в Google:
 
-[Моя работа по «Балансировка нагрузки. HAProxy/Nginx»](https://docs.google.com/document/d/1yBlzk6lhrQJQL7ctJmrvZ9ZY4VYHmf73/edit?usp=share_link&ouid=104113173630640462528&rtpof=true&sd=true)
+[Моя работа по «Балансировка нагрузки. HAProxy/Nginx»](https://docs.google.com/document/d/1rB0pGZSuvIDZqhkV-Oir9146HCcJQX-R/edit?usp=share_link&ouid=104113173630640462528&rtpof=true&sd=true)
 
