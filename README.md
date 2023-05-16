@@ -205,5 +205,5 @@ service haproxy reload
 
 ## Моя подробная работа в Google:
 
-[Моя работа по «Балансировка нагрузки. HAProxy/Nginx»](https://docs.google.com/document/)
+[Моя работа по «Балансировка нагрузки. HAProxy/Nginx»](https://docs.google.com/document/d/1Z_ZxMSyqTWs4xvH6Nz6D5Dbwp7Qn0tvI/edit?usp=share_link&ouid=104113173630640462528&rtpof=true&sd=true)
 
