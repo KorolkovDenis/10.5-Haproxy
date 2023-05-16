@@ -175,9 +175,35 @@ backend localhost_back
 
 ![screen11](https://github.com/KorolkovDenis/10.5-Haproxy/blob/main/screenshots/screen11.jpg)
 
-Все работает!
+Все работает! Читерство вышло))
+
+Вариант с использованием http-request set-path – замена адреса на иной в бекэнде.
+
+Возвращаем в первозданный вид конфиг nginx:
+```
+cd /etc/nginx/conf.d/
+nano default.conf
+```
+![screen12](https://github.com/KorolkovDenis/10.5-Haproxy/blob/main/screenshots/screen12.jpg)
+
+Перезапускаем службу:
+
+service nginx reload
+
+Правим файл: /etc/haproxy/haproxy.cfg
+
+![screen13](https://github.com/KorolkovDenis/10.5-Haproxy/blob/main/screenshots/screen13.jpg)
+
+Перезапускаем службу:
+
+service haproxy reload
+
+Проверяем результат.
+
+![screen14](https://github.com/KorolkovDenis/10.5-Haproxy/blob/main/screenshots/screen14.jpg)
+
 
 ## Моя подробная работа в Google:
 
-[Моя работа по «Балансировка нагрузки. HAProxy/Nginx»](https://docs.google.com/document/d/1rB0pGZSuvIDZqhkV-Oir9146HCcJQX-R/edit?usp=share_link&ouid=104113173630640462528&rtpof=true&sd=true)
+[Моя работа по «Балансировка нагрузки. HAProxy/Nginx»](https://docs.google.com/document/)
 
